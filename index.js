@@ -14,7 +14,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-
+app.use('/api/visitor', require('./routes/visitor'))
 app.use('/api/user', require('./routes/user'))
 app.use('/api/experience', require('./routes/experience'))
 app.use('/api/project', require('./routes/project'))
